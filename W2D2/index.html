@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <!--in doc styling
+    applies styling to all elements of the specified kind as the page loads-->
+
+    <style>
+
+        /*In here we must write in CSS*/
+
+        /*You can select in CSS and JS by:
+            *element type ex: body, div, p
+            *ID attribute ex: #wrapper, #nav, #title, #footer
+            *class attribute ex: coming in week 3 ig*/
+
+
+        div { /*applies to all divs in the page*/
+
+            border:1px solid black;
+            padding:10px; /*adds 10px of space between all 4 sides of content and the border*/
+            margin:5px; /*adds 5px of space between elements (space added outside of border)(?)*/
+
+        }
+        
+        #wrapper { /*# specifies ID name, only applies to the single element with that ID*/
+
+            background-color: white;
+
+        }
+
+        #nav, #footer { /*you can also do lists or collections of IDs if you have more than one element that needs the same styling*/
+
+            background-color: lightgray;
+
+        }
+
+        a {/*styles all links*/
+        
+        text-decoration: none;
+        font-size: 25px;
+        margin-right: 25px;
+
+        }
+
+        p {
+
+            font-size: 22px;
+
+        }
+
+    </style>    
+
+    <title>W2 | Bio</title>
+</head>
+<body style="background-color: grey;">
+    <div id="wrapper"><!--this div holds and "wraps/together" all content on the page-->
+        
+        <h1 id="top">Spencer Roucoulet</h1>
+
+        <div id="nav"> <!--NAVIGATION----------------------------------------------->
+        
+            <!--linking to OUTSIDE (not part of website) pages-->
+
+            <a href="https://www.serebii.net" target="_blank">Visit serebii!</a>
+            <!--href holds the uRL of website you're linking to-->
+            <!--target="_blank" opens link in a new tab in browser-->
+
+
+            <!--in-page links (placeholders for now)-->
+            <a href="#bio">BIO</a>
+            <a href="#school">SCHOOLING</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of page</a>
+
+        </div><!--/nav-->
+
+        <div id="bio"> <!--BIO SECTION---------------------------------------------->
+            <h2>About Me</h2>
+
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+
+            <!--img tag inserts an image, can be local (in-folder) or remote (specified full URL from a website)-->
+            <!--img can be both inline and block - changes depending on how/where it's used-->
+            <!--remote images are not safe...-->
+            <!--specify height OR width, only ONE, unless you feel like doing the specific math to maintain the aspect ratio
+            if you don't want to do said math, only modifying one of those values automatically maintains aspect ratio-->
+
+            <img src="https://www.serebii.net/legendsarceus/title.jpg" alt="Pokemon Legends Arceus title art, featuring the two playable characters overlooking a volcano in the background, with 10 pokemon accompanying them">
+
+            <!-- required attributes:
+                * src - provides the image filepath - either remote or relative
+                * alt - provides alternative text to be displayed if image is broken, OR for accessibility of screenreaders-->
+
+            <!--relative img link example-->
+            <img src="images/stormsEnd.jpg" alt="illustration of storm's end on a summer day" style="width:500px">
+
+        </div><!--/bio-->
+
+        <div id="school"> <!--SCHOOLING SECTION---------------------------------------->
+
+            <h2>Schooling</h2>
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+            </ol>
+    
+            <img src="images/meca.jpg" alt="I'll do this later" style="width:500px">  
+            
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+
+        </div><!--/school-->
+
+        <div id="hobbies"> <!--HOBBIES SECTION------------------------------------------>
+
+            <h2>Hobbies</h2>
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+            <br>
+            <br>
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+            <br>
+            <br>
+            <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>  <p>Pokémon Legends: Arceus is a new style of Pokémon game by Game Freak due for release on Nintendo Switch in 2022. As the start of a series, it features a story in an old version of Sinnoh featuring an open world, and more. The task in this game is to explore the Sinnoh Region after being tasked to create the first Pokédex, known as the Hisui Region. The region is filled with beauty and various other elements. This game introduces a variety of New Pokémon, as well as the introduction of regional variants, Hisuian Form Pokémon. The Gameplay is altered to adapt for the open world environment and seamless battles. It features a new take on the Battle System which incorporates speed intop a new scheme which allows for a Pokémon to take multiple turns in a row, changing with Strong Style and Agile Style to adapt to suit the battle. In the story, you join the Galaxy Team, a group of people from around the world who are in Hisui in order to research the various Pokémon. The team is led by Commander Kamado with research by Professor Laventon, and the Survey Corpes led by Cyllene. The game is presently listed as Single Player with no multiplayer features other than trading.</p>
+
+        </div><!--/hobbies-->
+
+        <div id="footer"> <!--FOOTER SECTION------------------------------------------->
+            <p style="font-size: 14px;">Spencer Roucoulet 2022 SE111 202220</p>
+        </div><!--/footer-->
+
+    </div><!--/wrapper-->
+
+</body>
+</html>
