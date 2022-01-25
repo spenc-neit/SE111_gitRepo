@@ -1,0 +1,27 @@
+The final page must include:
+
+    x Meta tag for the description of the site
+    x Meta tag for the author of the site
+    x Heading 1 Tag with your full name. Ex. Vinny Ritoli - About Me
+        - Heading should have an id of header
+    x A div tag with an id of "nav"
+    x Four links within the "nav" 
+        - Link one goes to the #bio id
+        - Link two goes to the #schooling id
+        - Link three goes to the #hobbies id
+        - Link four goes to the #footer
+    x (3x) H2 Tags that define each section topic on the page. There should be 3. Ex. Bio, Schooling, Hobbies
+    x Bio and Schooling sections will be separated by a horizontal rule. There should be 2.
+    x Bio section will include at minimum: One paragraph biography within  <p></p> tags and one image.
+    x Schooling section must include at least three schools and utilize a Ordered (Numbered) List.
+    x Hobbies section must include at least three interests and utilize a Unordered (Bulleted) List and one image.
+    x All images used in the page must be inside an "images" folder.
+    x Use one of each (Strong tag, Bold Tag, Italics Tag and em tag)
+    x Must use HTML comments (x3) to declare each section topic.
+    x HTML Comment your name, section ID and date within the <head></head> tags.
+    x One Hypertext Link to a website of your choice.
+    x A div tag with the id of "footer"
+        x Within the "footer"include:
+            x a link to the #header id that reads "Back to Top"
+            x a line break
+            x A screen shot of the page validation within the footer.
