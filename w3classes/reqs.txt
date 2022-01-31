@@ -1,0 +1,25 @@
+Based on demo [W3D2] edit the contact.html page from the w3_classes_ASSIGNMENT folder to include the following:
+
+Mainframe styling matches the previous 3 pages
+Header
+Nav Bar
+Main Navigation Bar links have a class of link-button
+Main Content
+Footer
+ 
+
+Based on the available screenshots and previous pages:
+
+Make sure the Game of Thrones text class got has been added to all necessary elements 
+Footer social images have a class of foot-img
+Footer social image links have a class of social-link
+ 
+
+ 
+
+Submission Criteria:
+You may change the name of the folder to "w3_classes" should you prefer
+
+Add and commit your changes to GIT.
+Push to Heroku.
+Submit a working link to this assignment.
