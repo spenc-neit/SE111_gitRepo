@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="S Roucoulet">
+    <meta name="description" content="week 5 demo">
+    <title>W5 Demo</title>
+</head>
+<body>
+    <h1>Basic Form Demo</h1>
+
+    <h2>Form w/o table</h2>
+
+    <!--text - fields for manual entry/input via keyboard - value will become what user enters-->
+
+    <!--ATTRIBUTE
+        for     label attribute, should match the name of the input element
+
+    -->
+
+    <form>
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id="firstname">
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
+    </form>
+
+    <h2>Form w/ table</h2>
+
+    <!--tables go in forms to align and organize them-->
+
+    <form method="GET" action="">
+        <table>
+            <tbody>
+                <tr>
+
+                    <td>
+                        <label for="firstname">First Name: </label>
+                    </td>
+
+
+
+                    <td>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="email" id="email">
+                    </td>
+                </tr>
+                <!--select - drop down element - works like ul or ol, reuires outer element that contains items-->
+                <tr>
+                    <td>
+                       <label for=="favcolor">Pick your favorite color</label>
+                    </td>
+
+                    <td>
+                        <select name="favcolor">
+                            <!--each item must have a value attribute so data can be passed from the form accurately-->
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>    
+                    </td>
+                </tr>
+
+                <!--radio buttons are a type of input, they are circular buttond, only one can be chosen from a set-->
+                <tr>
+                    <td>
+                       <label for="study">Program of Study</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="study" value="SE">Software Engineering<br>
+                        <input type="radio" name="study" value="NE">Network Engineering<br>
+                        <input type="radio" name="study" value="CYB">Cybersecurity<br>
+                        <input type="radio" name="study" value="WD">Web Development
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       <label for="vehicle">Select your vehicles</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="vehicle" value="car">Car<br>
+                        <input type="checkbox" name="vehicle" value="ship">Ship<br>
+                        <input type="checkbox" name="vehicle" value="horse">Horse<br>
+                        <input type="checkbox" name="vehicle" value="dragon">Dragon<br>
+                        <input type="checkbox" name="vehicle" value="sf">Starfighter<br>
+                        <input type="checkbox" name="vehicle" value="vert">Vertibird
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="comments">Comments</label>
+                    </td>
+
+                    <td>
+                        <textarea name="comments" rows="5" cols="20" placeholder="your comments here..." maxlength="10"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       <label for="date">Today's date:</label>
+                    </td>
+
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       
+                    </td>
+
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+</body>
+</html>
