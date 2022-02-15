@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SR">
+    <meta name="description" content="program that calculates pay for w6 assignment">
+    <title>Gross Pay Calculator</title>
+</head>
+<body>
+    <script>
+
+        wage = Number(prompt(`What is your hourly wage?`))
+        hours = Number(prompt(`How many hours have you worked in the past 2 weeks?`))
+        gross = wage * hours
+        uss = gross * .2 //tax rate is 20%
+        net = gross - uss
+
+        alert(`Gross pay: $${gross.toFixed(2)}\nUncle Sam's share: $${uss.toFixed(2)}\nNet pay: $${net.toFixed(2)}`)
+
+        console.log(`Gross pay: $${gross.toFixed(2)}`)
+        console.log(`Uncle Sam's share: $${uss.toFixed(2)}`)
+        console.log(`Net pay: $${net.toFixed(2)}`)
+
+    </script>
+</body>
+</html>
