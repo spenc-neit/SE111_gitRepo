@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w8 demo</title>
+</head>
+<body>
+    <h1>W8 JS Demo | Arrays/Objects</h1>
+    <div id="output">
+    </div>
+
+    <script>   
+
+        //created a new populated array
+
+        var people = [
+            `Katie`,   //people[0]
+            `Jay`,     //people[1]
+            `Spencer`, //people[2]
+            `Luigi`,   //people[3]
+            `Dan`      //people[4]
+        ]
+
+        console.log(people)
+        console.log(people[2])
+        console.log(`There are ${people.length} values in the people array`)
+
+        people[5] = `Sebastian`
+        console.log(people)
+
+        people.push(`Ryan`) //just like append in python
+        console.log(people)
+
+        var colors = [
+            `grey`, `black`, `red`, `blue`, `orange`, `blue`, `green`, `pink`
+        ]
+
+        console.log(`${people[2]}'s favorite color is ${colors[2]}`)
+
+        var htmlclass = []
+        var indexarray = []
+
+        for (let index = 0; index < people.length; index++)
+        {
+            console.log(`${people[index]}'s favorite color is ${colors[index]}`)
+            htmlclass.push(`SE111.02`)
+            indexarray.push(index + 1)
+        }
+
+        console.log(`${people[3]}'s fav color is ${colors[3]}, and they are in ${htmlclass[3]}`)
+
+        var assArray = []
+        assArray[`first`] = `Katie`
+        assArray[`last`] = `Truchon`
+        assArray[`dog`] = `George`
+
+        var person1 = {
+            first: `Katie`,
+            last: `Truchon`,
+            hasPets: true,
+            height: 64,
+            classes:[`SE111`, `VGD129`, `GMW251`],
+            petnames: {dogs: ['George', 'Marlowe'], cats: ['Jack']},
+            greeting: function(){alert(`Hi there ${this.first} ${this.last}!`)}
+        }
+
+        console.log(person1)
+        console.log(person1.height)
+        console.log(person1.classes)
+        console.log(person1.petnames)
+        person1.greeting()
+
+        var humans = [
+            person1
+        ]
+
+        var person3 = {
+            first: "Cam",
+            last: "Arbo",
+            age: 27,
+            height: 70,
+            classes: [`SE111`],
+            pets: {dogs: [`Thor`, `Valkyrie`]}
+        }
+
+        humans.push(person3)
+
+        for (let i = 0; i < humans.length; i++)
+        {
+            console.log(`info for ${humans[i].first}`)
+
+            for (let key in humans[i])
+                console.log(`${key}: ${humans[i][key]}`)
+        console.log(`----------------------`)
+        }
+
+        output = ""
+
+        for (let i = 0; i < humans.length; i++)
+        {
+            output+= `<h3>info for ${humans[i].first}</h3>`
+
+            for (let key in humans[i])
+                output += `<p><b>${key.toUpperCase()}:</b> ${humans[i][key]}</p>`
+        output += `<hr>`
+        }
+
+        document.querySelector(`#output`).innerHTML = output
+
+    </script>
+</body>
+</html>
