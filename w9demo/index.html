@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .red {
+            border: 1px solid red;
+            margin-bottom: 10px;
+            min-height: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>W9 JS Demo</h1>
+    <h3>Creating new elements and appending to HTML using JS</h3>
+ 
+    <script>
+
+        //body.children[0] is that h1 tag
+        //body.children[1] is that h3 tag
+        //body.children[2] is the entire script tag
+
+        var people = [{first:"W", last:"T", credit:"credit 1"},
+            {first:"R", last:"K", credit:"credit 2"},
+            {first:"G", last:"L", credit:"credit 3"}]
+
+        console.log(people)
+        console.log(people[0])
+        console.log(people[0].first)
+
+        console.dir(people[0])
+
+        //globally selecting the main element of the ducoment to be able to to add to it later, body is responsible for holding all data of the visual content for page
+        var body = document.querySelector(`body`)
+
+        console.log(body) //actual HTML element/code & its children/contents
+        console.dir(body) //properties of the body element object
+
+        console.log(body.children)
+        //body.children[0].innerHTML += ` is -u-`
+
+        //since we want to access each object within the array, we need to start with a FOR loop - this lets us process one value in the array at a time
+        for (let i = 0; i < people.length; i++)
+        {
+            //for every object in the array, do:
+            //create a div to hold the object's content/info, and add said div to the body element once it has its data
+            
+            //creating element
+            var tempDiv = document.createElement(`div`)
+
+            //add an id to the div element
+            tempDiv.setAttribute(`id`, String(i))
+            tempDiv.setAttribute(`class`, `red`)
+
+            //create p tags and add values from object properties to each one, then add p tags to the tempDiv
+            for(let key in people[i])
+            {
+                //creating a p
+                var p = document.createElement(`p`)
+                //creating text node
+                var text = document.createTextNode(people[i][key])
+                //add the text to the p element
+                p.appendChild(text)
+                //add the p to the new div
+                tempDiv.appendChild(p)
+            }//end of for in loop
+
+            console.log(tempDiv)
+
+            //adding the div to the page
+            body.appendChild(tempDiv)
+
+        }//end of for loop
+
+
+    </script>
+
+</body>
+</html>
